@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="phone_company">
+        <item>SKT</item>
+        <item>KT</item>
+        <item>LG</item>
+        <item>알뜰폰</item>
+    </string-array>
+
+    <string-array name="card_info">
+        <item>신한은행 1234</item>
+        <item>NH농협은행 1234</item>
+        <item>카카오뱅크 1234</item>
+        <item>우리은행 1234</item>
+        <item>국민은행 1234</item>
+        <item>기업은행 1234</item>
+    </string-array>
+
+    <string-array name="use_list">
+        <item>전체</item>
+        <item>충전</item>
+        <item>결제</item>
+        <item>결제취소</item>
+    </string-array>
+
+
+</resources>
+

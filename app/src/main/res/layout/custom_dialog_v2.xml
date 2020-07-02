@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_radius"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/spoqa_han_sans_bold"
+        android:text="출금계좌 삭제"
+        android:textColor="#000000"
+        android:textSize="20sp">
+
+    </TextView>
+
+
+    <TextView
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="14sp"
+        android:textColor="#a5a8b9"
+        android:text="등록된 출금계좌를 삭제하시겠습니까?\n(삭제시 충전, 환전이 불가능합니다)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+
+
+
+    <RelativeLayout
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_marginBottom="40dp"
+        android:weightSum="100">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+        <Button
+            android:fontFamily="@font/spoqa_han_sans_regular"
+            android:layout_marginBottom="20dp"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg_dialog_radius_black"
+            android:id="@+id/ok_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="확인" />
+
+        <Button
+            android:fontFamily="@font/spoqa_han_sans_regular"
+            android:layout_marginBottom="20dp"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg_dialog_radius_grey"
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="취소" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

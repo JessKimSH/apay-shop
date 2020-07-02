@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/spoqa_han_sans_regular"
+                android:gravity="center"
+                android:text="카드 충전"
+                android:textColor="#000000"
+                android:textSize="25dp">
+
+
+            </TextView>
+
+
+            <ImageView
+                android:id="@+id/close_imageview"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/close">
+
+            </ImageView>
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/spoqa_han_sans_bold"
+                    android:text="충전계좌"
+                    android:textColor="#000000"
+                    android:textSize="16dp">
+
+
+                </TextView>
+
+
+                <Spinner
+
+                    android:id="@+id/card_info_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:fontFamily="@font/spoqa_han_sans_regular"
+                    android:background="@drawable/spinner_background"></Spinner>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/spoqa_han_sans_bold"
+                    android:text="잔액"
+                    android:textColor="#000000"
+                    android:textSize="16dp">
+
+
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/previous_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/spoqa_han_sans_regular"
+                    android:text="12,000 P"
+                    android:textColor="#000000"
+                    android:textSize="16dp">
+
+
+                </TextView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_background2"
+                android:orientation="horizontal"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="10dp">
+
+                <EditText
+                    android:id="@+id/card_charge_edittext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:fontFamily="@font/spoqa_han_sans_regular"
+                    android:hint="충전 금액 입력"
+                    android:inputType="number"
+                    android:textColor="#304db9"
+                    android:textColorHint="#d0d0d0"
+                    android:textSize="20dp">
+
+                </EditText>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/spoqa_han_sans_regular"
+                    android:text="P"
+                    android:textColor="#848690"
+                    android:textSize="20dp">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/charge_balance_number"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:backgroundTint="@color/colorWhite"
+                android:cursorVisible="false"
+                android:inputType="number"
+                android:outlineAmbientShadowColor="@color/colorWhite"
+                android:outlineSpotShadowColor="@color/colorWhite"
+                android:shadowColor="@color/colorWhite"
+                android:textColor="@color/colorWhite"
+                android:textColorHighlight="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                android:textColorLink="@color/colorWhite"
+                android:visibility="visible" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/numeric_key_pad"
+        layout="@layout/numeric_key_pad_v2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/finish_textview" />
+
+    <TextView
+        android:id="@+id/finish_textview"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:background="#304db9"
+        android:fontFamily="@font/spoqa_han_sans_regular"
+        android:gravity="center"
+        android:text="충전"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/text_size_18" />
+</RelativeLayout>

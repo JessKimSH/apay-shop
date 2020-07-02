@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_radius"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:fontFamily="@font/spoqa_han_sans_bold"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:text="회원가입 완료"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+
+    <TextView
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="14sp"
+        android:textColor="#a5a8b9"
+        android:text="간편비밀번호 등록으로\n이동합니다"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+
+
+
+    <LinearLayout
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:weightSum="100">
+
+        <Button
+            android:fontFamily="@font/spoqa_han_sans_regular"
+            android:layout_marginBottom="20dp"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/bg_dialog_radius_black"
+            android:id="@+id/ok_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="확인" />
+
+    </LinearLayout>
+</LinearLayout>
